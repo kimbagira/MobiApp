@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        />
+
+
+    <EditText
+        android:id="@+id/Email2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@+id/Password"
+        android:padding="10dp"
+        android:layout_below="@+id/progressBar2"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="Password"
+        android:layout_below="@+id/Email2"
+        android:inputType="textPassword"
+        android:nextFocusDown="@+id/Password"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/LogInButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Log In"
+        android:layout_below="@+id/Password2"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="15dp"
+        android:textColor="@android:color/black" />
+
+
+</RelativeLayout>

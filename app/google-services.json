@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "454266380224",
+    "firebase_url": "https://mobiapp-2360f.firebaseio.com",
+    "project_id": "mobiapp-2360f",
+    "storage_bucket": "mobiapp-2360f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454266380224:android:3e705083d2ded316073225",
+        "android_client_info": {
+          "package_name": "com.example.mobiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454266380224-gjkfj2q09qec7vjsd5im0ukkhh1c46sk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobiapp",
+            "certificate_hash": "c5c518c2760a49f6c6dff1969dbcf79621ae476e"
+          }
+        },
+        {
+          "client_id": "454266380224-qgk4jfuocn40bqcipnu703n77udlh112.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtJqf2pJtl4UAD-0qn8UvvHQEDk7Lr66I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454266380224-qgk4jfuocn40bqcipnu703n77udlh112.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
