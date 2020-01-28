@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back2"
     tools:context=".LoginActivity">
 
 
@@ -21,13 +22,16 @@
         android:id="@+id/Email2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar2"
+        android:layout_marginTop="166dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
         android:background="@android:color/white"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:nextFocusDown="@+id/Password"
         android:padding="10dp"
-        android:layout_below="@+id/progressBar2"
-        android:layout_marginBottom="10dp"
         android:textColor="@android:color/black"
         android:textSize="20sp" />
 
@@ -35,25 +39,29 @@
         android:id="@+id/Password2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/Email2"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:background="@android:color/white"
         android:hint="Password"
-        android:layout_below="@+id/Email2"
         android:inputType="textPassword"
         android:nextFocusDown="@+id/Password"
         android:padding="10dp"
         android:textColor="@android:color/black"
         android:textSize="20sp" />
 
-
     <Button
         android:id="@+id/LogInButton2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/Password2"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorPrimary"
         android:padding="10dp"
         android:text="Log In"
-        android:layout_below="@+id/Password2"
-        android:background="@color/colorPrimary"
-        android:layout_marginTop="15dp"
         android:textColor="@android:color/black" />
 
 
