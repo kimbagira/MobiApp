@@ -16,6 +16,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     ProgressBar progressBar;
@@ -23,12 +25,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText password;
     Button signup;
     Button login;
+    FirebaseDatabase firebaseDatabase;
     FirebaseAuth firebaseAuth;
-
+    DatabaseReference reference;//making it offline
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         progressBar = findViewById(R.id.progressBar);
         email = findViewById(R.id.Email);
@@ -40,6 +45,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
         firebaseAuth = FirebaseAuth.getInstance();
+        firebaseDatabase =FirebaseDatabase.getInstance();
+        reference = firebaseDatabase.getReference("references"); //for saving the string offline
+        reference.keepSynced(true);  //for saving the string offline
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
